@@ -1,0 +1,53 @@
+# Git 기본 명령어
+### 준비하기
+- 기존 저장소 clone하기
+1. 로컬 저장소
+~~~
+git clone /로컬/저장소/경로
+~~~
+2. 원격 저장소
+~~~
+git clone 사용자명@호스트:/원격/저장소/경로
+~~~
+
+
+### 커밋하기
+- 파일 상태 확인하기
+~~~
+git status
+~~~
+git add 명령어를 통해 파일을 추가하면, 이 파일은 staging area에 저장되어 `tracked`상태가 된다. (git이 추적하지 않아도 되는 파일은 `untracked`상태)
+>##### Tracked 되는 파일 종류
+staging area에 있는 파일들 상태 : `Staged`<br/>
+staging area에 있는 파일 커밋하면 : `Unmodified`<br/>
+Unmodified 상태의 파일 수정하면(아직 staging area에 추가하지 않은): `Modified`
+
+- 변경된 파일 인덱스에 추가
+~~~
+git add [파일 이름]
+~~~
+- 변경 내용 커밋하기(HEAD에 반영됨)
+~~~
+git commit -m "설명"
+~~~
+`-a` 옵션을 사용하면 git add 명령 실행 생략 가능
+~~~
+git commit -am "설명"
+~~~
+- 파일 삭제하기
+~~~
+git rm [파일명]
+~~~
+이 명령을 수행하면 삭제한 파일은 `staged` 상태가 된다. 이후 커밋하면 파일은 실제로 지워진다.
+
+- 원격 저장소에 변경된 내용 push하기
+~~~
+git push [원격 저장소 이름][브랜치 이름]
+git push -u origin master
+~~~
+`-u`옵션은 원격 저장소로부터 업데이트 받은 후 push한다는 의미.
+- 커밋 수정하기
+~~~
+git commit --amend
+~~~
+완료한 커밋을 수정하여 다시 커밋 하고싶을 경우, `--amend`옵션을 사용한다.
