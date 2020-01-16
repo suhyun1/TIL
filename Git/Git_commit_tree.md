@@ -31,7 +31,7 @@ git checkout HEAD^  //한 커밋 위로 이동
 git branch -f master HEAD~3
 ~~~
 -예제: HEAD, master, bugfix를 제시되는 골지점으로 옮겨라<br/>아래 그림은 초기상태
-![텍스트](ref_example.jpg)
+![텍스트](ref_example.JPG)
 ~~~
 git checkout c6
 git branch -f master HEAD
@@ -39,7 +39,7 @@ git branch -f bugfix HEAD~4
 git checkout C1
 ~~~
 결과 화면<br/>
-![텍스트](ref_example02.jpg)
+![텍스트](ref_example02.JPG)
 
 
 ### git 변경한 내용 되돌리기
