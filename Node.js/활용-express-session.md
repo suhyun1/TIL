@@ -16,15 +16,25 @@
 속도 | 비교적 빠름 | 데이터가 서버에 있어 처리속도로 인해 비교적 느림
 보안 | 로컬에 저장되므로 탈취할 가능성 높아 위험 | 비교적 보안성 좋음
 
-
+<br/><br/><br/>
 ### express에서 session 사용하기
-- express에 세션기능 추가하는 패키지 `express-session`
+- 사용 방법
 ~~~
 npm install express-session
 ~~~
+express에 세션기능 추가하는 패키지 `express-session`
 
-- 사용 방법
 
+~~~js
+const session = require('express-session');
+app.use(session({
+    secret: '3K49A2Q89LZ3$@#^(!dfz',
+    resave: false,
+    saveUninitialized: true
+}));
+~~~
+
+간단한 counter 예제
 ~~~js
 app.get('/count', function(req,res){
     if(req.session.count){
@@ -42,10 +52,18 @@ session id가 동일한 경우, 요청 시 count 값이 1씩 증가한다.<br/>
 \* req.sessionID는 client를 구분할 수 있는 session-id
 
 
-
+<br/><br/>
 ### Login 기능 구현
 **\* 이 예제는 session 연습을 위한 간단한 예제로, 안전한 구현 방법이 아님**
 ~~~js
+//DB대신
+let users = [
+    {
+        username: 'suhyun',
+        password: '111111',
+        displayName: 'Suhyun'
+    }
+];
 app.get('/auth/logout', function(req,res){
     delete req.session.displayName; //서버상에서 제거됨
     res.redirect('/welcome');
@@ -63,12 +81,7 @@ app.get('/welcome', function (req,res) {
 });
 
 app.post('/auth/login', function (req, res) { //post처리위해 body-parser모듈 필요
-    //DB대신
-    const user = {
-        username: 'suhyun',
-        password: '111',
-        displayName: 'Suhyun'
-    };
+
     const uname = req.body.username;
     const pwd = req.body.password;
 
