@@ -53,9 +53,33 @@ session id가 동일한 경우, 요청 시 count 값이 1씩 증가한다.<br/>
 
 
 <br/><br/>
-### Login 기능 구현
-**\* 이 예제는 session 연습을 위한 간단한 예제로, 안전한 구현 방법이 아님**
+### Session을 이용한 Login 기능 구현
+**\* 이 예제는 session 이해를 위한 간단한 예제로, 안전한 구현 방법이 아님. 이후 작성할 password 암호화, passportJS 내용 참고**
 ~~~js
+
+app.get('/auth/logout', function(req,res){
+    delete req.session.displayName; //서버상에서 세션 제거됨
+    req.session.save(function(){
+        res.redirect('/welcome');
+    })
+});
+app.get('/welcome', function (req,res) {
+    if (req.session.displayName) {//로그인성공
+        res.send(`
+          <h1>hello ${req.session.displayName}</h1>
+          <a href="/auth/logout">logout</a>
+        `);
+    } else {
+      res.send(`
+          <h1>Welcome</h1>
+          <ul>
+              <li><a href="/auth/login">Login</a></li>
+              <li><a href="/quth/register">Register</a></li>
+          </ul>
+        `);
+    }
+});
+
 //DB대신
 let users = [
     {
@@ -64,33 +88,24 @@ let users = [
         displayName: 'Suhyun'
     }
 ];
-app.get('/auth/logout', function(req,res){
-    delete req.session.displayName; //서버상에서 제거됨
-    res.redirect('/welcome');
-});
-app.get('/welcome', function (req,res) {
-    if (req.session.displayName) {//로그인성공
-        res.send(`
-        <h1>hello ${req.session.displayName}</h1>
-        <a href="/auth/logout">logout</a>
-        `);
-    } else {
-        res.send(`<a href="/auth/login">Login</a>`);
-    }
-
-});
-
-app.post('/auth/login', function (req, res) { //post처리위해 body-parser모듈 필요
+app.post('/auth/login', function (req, res) { //post처리 위해 body-parser모듈 필요
 
     const uname = req.body.username;
     const pwd = req.body.password;
 
-    if (uname == user.username && pwd == user.password) {
-        req.session.displayName = user.displayName;
-        res.redirect('/welcome');
-    } else {
-        res.send('who are you?');
+    for(let i=0; i<users.length;i++){
+        const user = users[i];
+
+        if (uname === user.username && pwd === user.password) {
+            req.session.displayName = user.displayName;
+            req.session.save(function(){
+                res.redirect('/welcome');
+            });
+        } else {
+            res.send('who are you? <a href="/auth/login">Login</a>');
+        }
     }
+    res.send('who are you? <a href="/auth/login">Login</a>');
 });
 
 app.get('/auth/login', function(req,res){
@@ -109,8 +124,42 @@ app.get('/auth/login', function(req,res){
     `;
     res.send(output);
 });
+app.post('/auth/register',function(req,res){
+    const user = {
+        username: req.body.username,
+        password: req.body.password,
+        displayName: req.body.displayName
+    };
+    users.push(user);
+    req.session.displayName = req.body.displayName;
+    req.session.save(function () {
+        res.redirect('/welcome');
+    });
+
+});
+app.get('/auth/register', function (req, res) {
+    let output = `
+    <h1>Register</h1>
+    <form action="/auth/register" method="post">
+        <p>
+            <input type="text" name ="username" placeholder="username">
+        </p>
+        <p>
+            <input type="password" name="password" placeholder="password">
+        </p>
+        <p>
+            <input type="text" name="displayName" placeholder="displayName">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+    `;
+    res.send(output);
+});
 ~~~
 
+<br/><br/>
 ### file에 session 저장
 ~~~js
 const session = require('express-session'); //이 모듈은 기본적으로 메모리에 저장함
@@ -127,7 +176,7 @@ app.use(session({
 ~~~
 이렇게 수정하면 'sessions'라는 폴더에 저장된다.
 
-
+<br/><br/>
 ### DB(mysql)에 session 저장
 ~~~js
 const session = require('express-session');
@@ -152,22 +201,3 @@ app.use(session({
 ~~~
 
 수행 결과 sessions라는 table이 생성된다. table을 확인해보면 session_id, expires, data 정보를 가진다.
-
-~~~js
-app.get('/auth/logout', function(req,res){
-    delete req.session.displayName;
-    res.redirect('/welcome');
-});
-~~~
-위의 코드는 logout 시 수행하는 내용인데, DB에 저장이 끝난후에 redirect하도록 아래 코드처럼 콜백함수 안에 넣어주는 것이 좋다.
-~~~js
-app.get('/auth/logout', function(req,res){
-    delete req.session.displayName;
-
-    //db에 저장이 끝난 후에 redirect
-    req.session.save(function(){
-        res.redirect('/welcome');
-    })
-
-});
-~~~
