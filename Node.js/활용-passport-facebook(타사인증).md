@@ -47,13 +47,14 @@ passport.use(new FacebookStrategy({
     callbackURL: "/auth/facebook/callback",
     profileFields:['id', 'email', 'name', 'displayName']
     },function (accessToken, refreshToken, profile, done) {
+
         const authId = 'facebook:'+profile.id;
-        const sql = 'SELECT * FROM users WEHRE authId=?';
+        const sql = 'SELECT * FROM users WHERE authId=?';
         conn.query(sql, [authId], function(err, results){
 
-            if(results>0){
+            if(results.length > 0){ //존재하는 사용자일 경우
                 done(null, results[0]);
-            }else{
+            }else{                  //새로운 사용자
                 const newUser = {
                     'authId': authId,
                     'displayName': profile.displayName,
