@@ -16,7 +16,8 @@ Prisma는 APP 또는 API server와 Database 사이에 위치한 Data Access Laye
 ### Prisma와 GraphQL
 prisma는 DB를 GraphQL로 정의할 수 있다(GraphQL API로 바꿔준다). 따라서 GraphQL의 queries와 mutations을 사용하여 DB를 읽고 쓸 수 있다.
 이러한 GraphQL CRUD mapping은 Prisma Service에서 제공한다. 그리고 Prisma Service는 Prisma Server에서 돌아간다. Prisma Service는 `prisma.yml`과 `datamodel.prisma` 이 두 가지 파일을 통해 설정된다. (prisma init 시 자동으로 파일 생성됨)<br/>
-[Datamodel 간단 정리](Prisma-Datamodel.md)<br/>
+[Datamodel 간단 정리](Prisma-Datamodel.md)
+<br/>
 
 ### 사용 방법
 
@@ -28,27 +29,32 @@ npm install -g prisma
 2. https://app.prisma.io 에 접속하여 가입 후 workspace 생성하고
 `add a service` 메뉴 선택
 <br/>
+
 3. 메뉴 선택시 보이는 cloudSessionKey를 통해 로그인
+
 ~~~
 prisma login -k //사용자에 따라 값 주어진다
 ~~~
 <br/>
+
 4. 새로운 service 만들기
+
 ~~~
 prisma init
 //또는 아래처럼 폴더 이름 지정 가능
 prisma init hello-world
 ~~~
-초기화 시 service 이름, stage, DB, deploy region, client 언어 등을 설정하면 된다.<br/>
+
+초기화 시 service 이름, stage, DB, deploy region, client 언어 등을 설정하면 된다.
+<br/>
 
 5. 배포
 ~~~
 prisma deploy
 ~~~
-배포를 하면 자신의 prisma 계정에 datamodel의 바뀐 내용이 모두 업데이트 된다.<br/>
+배포를 하면 자신의 prisma 계정에 datamodel의 바뀐 내용이 모두 업데이트 된다.
 
-
-
+<br/>
 ### Service endpoints
 prisma deploy 완료 시, 'Your Prisma endpoint is live: '라는 메시지와 함께 playgorund 서버의 주소를 알려준다.(`prisma.yml`에서도 쓰여있다) Prisma Admin은 endpoint에 접근 가능하다.
 (CRUD가 모두 가능하므로, 이 링크를 사용자에게 알려주어선 안됨)
