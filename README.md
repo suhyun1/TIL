@@ -27,8 +27,7 @@
 - [passport - 타사인증(facebook으로 로그인) 구현하기](Node.js/활용-passport-facebook.md)
 
 ### GraphQL
-
-정리 예정
+- [GraphQL VS. REST](GraphQL/GraphQL-vs-REST.md)
 
 #### +) Prisma
 - [Prisma 시작하기](GraphQL/Prisma-Intro.md)
