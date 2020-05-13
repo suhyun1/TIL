@@ -27,4 +27,5 @@
 <br/>
 
 #### 참고
-- [process와 thread에 대한 정리 - 마기의 개발 블로그](https://magi82.github.io/process-thread/)
+- [process와 thread에 대한 정리](https://magi82.github.io/process-thread/)
+- [프로세스와 쓰레드에서의 컨텍스트 스위칭](https://agh2o.tistory.com/12)
