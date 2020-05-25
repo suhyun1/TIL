@@ -26,6 +26,7 @@ prisma는 DB를 GraphQL로 정의할 수 있다(GraphQL API로 바꿔준다). �
 npm install -g prisma
 ~~~
 <br/>
+
 2. https://app.prisma.io 에 접속하여 가입 후 workspace 생성하고
 `add a service` 메뉴 선택
 <br/>
@@ -53,8 +54,8 @@ prisma init hello-world
 prisma deploy
 ~~~
 배포를 하면 자신의 prisma 계정에 datamodel의 바뀐 내용이 모두 업데이트 된다.
-
 <br/>
+
 ### Service endpoints
 prisma deploy 완료 시, 'Your Prisma endpoint is live: '라는 메시지와 함께 playgorund 서버의 주소를 알려준다.(`prisma.yml`에서도 쓰여있다) Prisma Admin은 endpoint에 접근 가능하다.
 (CRUD가 모두 가능하므로, 이 링크를 사용자에게 알려주어선 안됨)
