@@ -5,10 +5,14 @@
 - [탐욕법(Greedy)의 예시](algorithm/greedy.md)
 
 ### Operating System
-- [프로세스 - PCB, Context Switching](OS/프로세스-PCB와-문맥교환.md)
-- [프로세스 vs 스레드](OS/프로세스-vs-스레드.md)
+- [프로세스 - PCB와 Context Switching](OS/프로세스-PCB와-문맥교환.md)
+- [프로세스와 스레드](OS/프로세스-vs-스레드.md)
 - [커널 레벨 스레드와 유저 레벨 스레드](OS/커널레벨스레드-vs-유저레벨스레드.md)
+- [CPU 스케쥴링 종류](OS/CPU-스케쥴링-알고리즘.md)
 - [IPC - 메시지 패싱 vs 공유 메모리](OS/IPC-방식.md)
+- [프로세스 동기화 - 임계구역 문제](OS/임계구역.md)
+- [교착상태](OS/교착상태.md)
+
 
 ### Network
 정리 예정
@@ -40,6 +44,9 @@
 
 ### Etc
 - [32bit와 64bit 어플리케이션의 차이점](etc/32bit-vs-64bit-application.md)
+
+
+
 
 ### 책
 > 기술 서적 읽고 정리
