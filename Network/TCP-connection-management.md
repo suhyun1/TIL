@@ -32,3 +32,4 @@ server는 이 `ACK`을 받으면 소켓을 닫고(closed), client는 TIME_WAIT�
 ##### 참고
 - [TCP Connection Establishment - geeksforgeeks](https://www.geeksforgeeks.org/computer-network-tcp-3-way-handshake-process/)
 - [TCP Connection Termination - geeksforgeeks](https://www.geeksforgeeks.org/tcp-connection-termination/)
+- [[TCP]3-way-handshake & 4-way-handshake - tistory ](https://asfirstalways.tistory.com/356?category=685177)
