@@ -14,9 +14,10 @@
 - [교착상태](OS/교착상태.md)
 - [메모리 할당 기법 - 페이징과 세그멘테이션](OS/메모리-할당-기법.md)
 - [페이지 교체 알고리즘](OS/페이지-교체-알고리즘.md)
+- [스토리지 관리 - RAID](OS/RAID.md)
 
 ### Network
-정리 예정
+- [3 way handshake & 4 way handshake](Network/TCP-connection-management.md)
 
 ### AWS
 정리 예정
