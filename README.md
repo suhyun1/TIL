@@ -28,8 +28,9 @@
 - [Git의 브랜치](Git/02.Git_branch.md)
 - [커밋트리에서 이동하기](Git/03.Git_commit_tree.md)
 - [작업 여기저기로 옮기기(cherry-pick과 rebase)](Git/04.cherry-pick,rebase.md)
-- [Git Stash로 임시 보관하기](Git/05.Git-Stash.md)
-- [Git amend로 기존 커밋 수정하기](Git/06.Git-amend.md)
+- [Stash로 임시 보관하기](Git/05.Git-Stash.md)
+- [amend로 기존 커밋 수정하기](Git/06.Git-amend.md)
+- [revert로 원격 저장소 커밋 되돌리기](Git/Git-revert.md)
 
 ### Node.js
 - [Express-cookie 사용하기](Node.js/활용-express-cookie.md)
