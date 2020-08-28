@@ -3,7 +3,7 @@
 ### TCP(Transmission Control Protocol)
 
 - **연결형** 프로토콜
-> TCP의 handshake는 [여기](Network/TCP-connection-management.md) 참고
+> TCP의 handshake는 [여기](TCP-connection-management.md) 참고
 
 - Congestion Control, Flow Control 지원
 > Flow Control: 데이터의 처리 속도를 조절하여 receiver의 버퍼 오버플로우를 방지한다. receiver window의 크기를 설정해 수신량을 정할 수 있다.<br/>
