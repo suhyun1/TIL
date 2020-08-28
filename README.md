@@ -48,8 +48,8 @@
 
 ### Etc
 - [32bit와 64bit 어플리케이션의 차이점](etc/32bit-vs-64bit-application.md)
-
-
+- [프레임워크와 라이브러리의 차이](etc/프레임워크와-라이브러리-차이점.md)
+- [URI, URL, URN](etc\URI-URL-URN.md)
 
 
 ### 책
