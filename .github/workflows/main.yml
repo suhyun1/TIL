@@ -23,7 +23,7 @@ jobs:
         run: python update_readme.py
         
       - name: Push
-        run: 
+        run: |
           git config --global user.name 'suhyun1'
           git config --global user.email ${{ secrets.EMAIL }}
           git commit -am "auto-update README.md" || true
