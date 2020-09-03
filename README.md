@@ -14,14 +14,15 @@
 
 ### Git
 
+- [Git 기본 명령어](Git/Git-기본-명령어.md)
+- [amend로 기존 커밋 수정하기](Git/amend로-기존-커밋-수정하기.md)
+- [Git 브랜치 사용하기](Git/Git-브랜치-사용하기.md)
 - [stash로 임시 보관하기](Git/stash로-임시-보관하기.md)
 - [커밋메시지 convention과 커밋 template 만들기](Git/커밋메시지-convention과-커밋-template-만들기.md)
-- [Git 기본 명령어](Git/Git-기본-명령어.md)
+- [특정 커밋 수정하기](Git/특정-커밋-수정하기.md)
 - [커밋트리에서 이동하기](Git/커밋트리에서-이동하기.md)
 - [작업 여기저기로 옮기기(체리픽,리베이스)](Git/작업-여기저기로-옮기기(체리픽,리베이스).md)
 - [revert로 원격 레포 커밋 되돌리기](Git/revert로-원격-레포-커밋-되돌리기.md)
-- [amend로 기존 커밋 수정하기](Git/amend로-기존-커밋-수정하기.md)
-- [Git 브랜치 사용하기](Git/Git-브랜치-사용하기.md)
 
 ### GraphQL
 
