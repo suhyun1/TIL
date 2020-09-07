@@ -2,6 +2,7 @@ import os
 import datetime
 
 HEADER = """# TIL
+
 > 배운 것을 기록하자
 
 """
@@ -27,8 +28,10 @@ def main():
         folder = os.path.basename(root)
         content += "### {}\n\n".format(folder)
 
-        files.sort(key=lambda f: os.path.getctime(folder + "/" + f))
+        files.sort(reverse=False, key=lambda f: os.path.getmtime(folder + "/" + f))
         for file in files:
+            print(os.path.basename(file))
+            print(os.path.getmtime(folder+"/"+file))
             if os.path.basename(file).split(".")[1] == "md":
                 name = os.path.basename(file).split(".")[0]
                 name = name.replace("-", " ")
