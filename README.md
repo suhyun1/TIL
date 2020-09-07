@@ -1,4 +1,5 @@
 # TIL
+
 > 배운 것을 기록하자
 
 ### Algorithm
@@ -9,18 +10,18 @@
 
 ### Etc
 
-- [32bit와 64bit 어플리케이션](Etc/32bit와-64bit-어플리케이션.md)
 - [URI와 URL와 URN](Etc/URI와-URL와-URN.md)
 - [프레임워크와 라이브러리](Etc/프레임워크와-라이브러리.md)
+- [32bit와 64bit 어플리케이션](Etc/32bit와-64bit-어플리케이션.md)
 
 ### Git
 
 - [stash로 임시 보관하기](Git/stash로-임시-보관하기.md)
+- [작업 여기저기로 옮기기 with 체리픽,리베이스](Git/작업-여기저기로-옮기기-with-체리픽,리베이스.md)
 - [커밋메시지 convention과 커밋 template 만들기](Git/커밋메시지-convention과-커밋-template-만들기.md)
 - [특정 커밋 수정하기](Git/특정-커밋-수정하기.md)
 - [Git 기본 명령어](Git/Git-기본-명령어.md)
 - [커밋트리에서 이동하기](Git/커밋트리에서-이동하기.md)
-- [작업 여기저기로 옮기기(체리픽,리베이스)](Git/작업-여기저기로-옮기기(체리픽,리베이스).md)
 - [revert로 원격 레포 커밋 되돌리기](Git/revert로-원격-레포-커밋-되돌리기.md)
 - [amend로 기존 커밋 수정하기](Git/amend로-기존-커밋-수정하기.md)
 - [Git 브랜치 사용하기](Git/Git-브랜치-사용하기.md)
@@ -58,6 +59,6 @@
 ### Prisma
 
 - [Prisma의 Datamodel](Prisma/Prisma의-Datamodel.md)
-- [Prisma의 checkExistence](Prisma/Prisma의-checkExistence.md)
 - [Prisma 시작하기](Prisma/Prisma-시작하기.md)
+- [Prisma의 checkExistence](Prisma/Prisma의-checkExistence.md)
 
