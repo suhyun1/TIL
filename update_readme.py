@@ -28,7 +28,7 @@ def main():
         folder = os.path.basename(root)
         content += "### {}\n\n".format(folder)
 
-        files.sort(reverse=False, key=lambda f: os.path.getmtime(folder + "/" + f))
+        files.sort(reverse=False, key=lambda f: os.path.getctime(folder + "/" + f))
         for file in files:
             print(os.path.basename(file))
             print(os.path.getmtime(folder+"/"+file))
