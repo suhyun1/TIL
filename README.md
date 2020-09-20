@@ -44,16 +44,16 @@
 ### OS
 
 - [Inter Process Communication](OS/Inter-Process-Communication.md)
+- [RAID](OS/RAID.md)
+- [교착상태](OS/교착상태.md)
+- [CPU 스케쥴링 알고리즘](OS/CPU-스케쥴링-알고리즘.md)
 - [프로세스](OS/프로세스.md)
 - [임계구역 문제](OS/임계구역-문제.md)
 - [프로세스와 스레드](OS/프로세스와-스레드.md)
 - [메모리 할당 기법](OS/메모리-할당-기법.md)
-- [RAID](OS/RAID.md)
 - [커널 레벨 스레드와 유저 레벨 스레드](OS/커널-레벨-스레드와-유저-레벨-스레드.md)
 - [스레싱](OS/스레싱.md)
-- [교착상태](OS/교착상태.md)
 - [페이지 교체 알고리즘](OS/페이지-교체-알고리즘.md)
-- [CPU 스케쥴링 알고리즘](OS/CPU-스케쥴링-알고리즘.md)
 
 ### Prisma
 
@@ -63,6 +63,7 @@
 
 ### Web
 
+- [HTTP 응답 상태코드](Web/HTTP-응답-상태코드.md)
 - [Rest API란 무엇인가](Web/Rest-API란-무엇인가.md)
 - [URI와 URL와 URN](Web/URI와-URL와-URN.md)
 
