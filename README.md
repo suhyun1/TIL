@@ -8,6 +8,10 @@
 - [다이나믹 프로그래밍](Algorithm/다이나믹-프로그래밍.md)
 - [안정 정렬과 불안정 정렬](Algorithm/안정-정렬과-불안정-정렬.md)
 
+### CleanCode
+
+- [2장 의미있는  이름](CleanCode/2장-의미있는 -이름.md)
+
 ### Etc
 
 - [프레임워크와 라이브러리](Etc/프레임워크와-라이브러리.md)
@@ -58,8 +62,8 @@
 ### Prisma
 
 - [Prisma 시작하기](Prisma/Prisma-시작하기.md)
-- [Prisma의 checkExistence](Prisma/Prisma의-checkExistence.md)
 - [Prisma의 Datamodel](Prisma/Prisma의-Datamodel.md)
+- [Prisma의 checkExistence](Prisma/Prisma의-checkExistence.md)
 
 ### Web
 
