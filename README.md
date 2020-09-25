@@ -10,7 +10,8 @@
 
 ### CleanCode
 
-- [2장 의미있는  이름](CleanCode/2장-의미있는 -이름.md)
+- [3장 함수](CleanCode/3장-함수.md)
+- [2장 의미있는 이름](CleanCode/2장-의미있는-이름.md)
 
 ### Etc
 
@@ -62,8 +63,8 @@
 ### Prisma
 
 - [Prisma 시작하기](Prisma/Prisma-시작하기.md)
-- [Prisma의 Datamodel](Prisma/Prisma의-Datamodel.md)
 - [Prisma의 checkExistence](Prisma/Prisma의-checkExistence.md)
+- [Prisma의 Datamodel](Prisma/Prisma의-Datamodel.md)
 
 ### Web
 
