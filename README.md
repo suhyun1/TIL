@@ -11,6 +11,7 @@
 ### CleanCode
 
 - [3장 함수](CleanCode/3장-함수.md)
+- [4장 주석](CleanCode/4장-주석.md)
 - [2장 의미있는 이름](CleanCode/2장-의미있는-이름.md)
 
 ### Etc
