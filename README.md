@@ -14,6 +14,7 @@
 - [4장 주석](CleanCode/4장-주석.md)
 - [2장 의미있는 이름](CleanCode/2장-의미있는-이름.md)
 - [3장 함수](CleanCode/3장-함수.md)
+- [6장 객체와 자료구조](CleanCode/6장-객체와-자료구조.md)
 
 ### Etc
 
@@ -54,19 +55,19 @@
 - [스레싱](OS/스레싱.md)
 - [RAID](OS/RAID.md)
 - [메모리 할당 기법](OS/메모리-할당-기법.md)
-- [프로세스와 스레드](OS/프로세스와-스레드.md)
 - [임계구역 문제](OS/임계구역-문제.md)
 - [페이지 교체 알고리즘](OS/페이지-교체-알고리즘.md)
 - [교착상태](OS/교착상태.md)
 - [Inter Process Communication](OS/Inter-Process-Communication.md)
 - [CPU 스케쥴링 알고리즘](OS/CPU-스케쥴링-알고리즘.md)
+- [프로세스와 스레드](OS/프로세스와-스레드.md)
 - [프로세스](OS/프로세스.md)
 
 ### Prisma
 
 - [Prisma의 Datamodel](Prisma/Prisma의-Datamodel.md)
-- [Prisma 시작하기](Prisma/Prisma-시작하기.md)
 - [Prisma의 checkExistence](Prisma/Prisma의-checkExistence.md)
+- [Prisma 시작하기](Prisma/Prisma-시작하기.md)
 
 ### Web
 
