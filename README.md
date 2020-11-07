@@ -12,6 +12,7 @@
 
 - [3장 함수](CleanCode/3장-함수.md)
 - [7장 에러 처리](CleanCode/7장-에러-처리.md)
+- [9장 단위 테스트](CleanCode/9장-단위-테스트.md)
 - [2장 의미있는 이름](CleanCode/2장-의미있는-이름.md)
 - [5장 형식 맞추기](CleanCode/5장-형식-맞추기.md)
 - [4장 주석](CleanCode/4장-주석.md)
@@ -40,8 +41,8 @@
 
 ### Network
 
-- [3 way handshake & 4 way handshake](Network/3-way-handshake-&-4-way-handshake.md)
 - [TCP와 UDP](Network/TCP와-UDP.md)
+- [3 way handshake & 4 way handshake](Network/3-way-handshake-&-4-way-handshake.md)
 
 ### Node.js
 
