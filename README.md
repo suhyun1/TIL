@@ -4,13 +4,14 @@
 
 ### Algorithm
 
-- [안정 정렬과 불안정 정렬](Algorithm/안정-정렬과-불안정-정렬.md)
 - [Greedy 알고리즘](Algorithm/Greedy-알고리즘.md)
 - [다이나믹 프로그래밍](Algorithm/다이나믹-프로그래밍.md)
+- [안정 정렬과 불안정 정렬](Algorithm/안정-정렬과-불안정-정렬.md)
 
 ### CleanCode
 
 - [3장 함수](CleanCode/3장-함수.md)
+- [10장 클래스](CleanCode/10장-클래스.md)
 - [7장 에러 처리](CleanCode/7장-에러-처리.md)
 - [9장 단위 테스트](CleanCode/9장-단위-테스트.md)
 - [2장 의미있는 이름](CleanCode/2장-의미있는-이름.md)
@@ -57,12 +58,12 @@
 - [RAID](OS/RAID.md)
 - [임계구역 문제](OS/임계구역-문제.md)
 - [커널 레벨 스레드와 유저 레벨 스레드](OS/커널-레벨-스레드와-유저-레벨-스레드.md)
-- [프로세스](OS/프로세스.md)
-- [프로세스와 스레드](OS/프로세스와-스레드.md)
 - [메모리 할당 기법](OS/메모리-할당-기법.md)
 - [Inter Process Communication](OS/Inter-Process-Communication.md)
 - [스레싱](OS/스레싱.md)
 - [CPU 스케쥴링 알고리즘](OS/CPU-스케쥴링-알고리즘.md)
+- [프로세스](OS/프로세스.md)
+- [프로세스와 스레드](OS/프로세스와-스레드.md)
 - [페이지 교체 알고리즘](OS/페이지-교체-알고리즘.md)
 
 ### Prisma
